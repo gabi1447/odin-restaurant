@@ -5,5 +5,10 @@
 }
 
 body {
-    background-color: coral;
+    background-color: salmon;
+    padding: 2rem;
+}
+
+nav button {
+    cursor: pointer;
 }
