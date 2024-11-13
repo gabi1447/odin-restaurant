@@ -3,14 +3,12 @@ import logo from './burger-logo.jpg';
 export function generateHomepage() {
     const content = document.getElementById('content');
     
-    const restaurantName = "Pacheco's";
     const headlineText = "Bite into Happiness!";
     const descriptionText = "At Pacheco's, we believe every bite should be unforgettable. Our burgers are crafted with the freshest ingredients, juicy patties, and a perfect blend of flavors that’ll leave you craving more. Whether you’re a fan of classic cheeseburgers or adventurous flavors, each burger is made to order with love and care. Come experience the joy of a truly delicious burger and let us make your meal the highlight of your day!"
     
     // Heading
-    const burgerHeading = document.createElement('h1');
-    burgerHeading.innerText = restaurantName;
-    content.appendChild(burgerHeading);
+    const heading = generateHeading();
+    content.appendChild(heading);
 
     // LogoHeadline
     const logoHeadline = document.createElement('div');
@@ -39,4 +37,13 @@ export function generateHomepage() {
 
 export function testing() {
     console.log('testing');
+}
+
+function generateHeading() {
+    const restaurantName = "Pacheco's";
+
+    // Heading
+    const burgerHeading = document.createElement('h1');
+    burgerHeading.innerText = restaurantName;
+    return burgerHeading;
 }
