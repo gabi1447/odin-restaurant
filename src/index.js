@@ -1,4 +1,6 @@
 import './styles.css';
+import { generateHomepage } from './homepage.js';
 
-alert("Welcome to my restaurant");
+generateHomepage();
+
 console.log("hello world");
