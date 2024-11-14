@@ -3,15 +3,12 @@ import logo from './burger-logo.jpg';
 export function generateHomepage() {
     const content = document.getElementById('content');
         
-    // Heading
     const heading = generateHeading();
     content.appendChild(heading);
 
-    // Logo Headline
     const logoHeadline = generateLogoHeadline();
     content.appendChild(logoHeadline);
 
-    // Restaurant Description
     const restaurantDescription = generateDescription();
     content.appendChild(restaurantDescription);
 }
@@ -19,7 +16,6 @@ export function generateHomepage() {
 function generateHeading() {
     const restaurantName = "Pacheco's";
 
-    // Heading
     const burgerHeading = document.createElement('h1');
     burgerHeading.innerText = restaurantName;
     return burgerHeading;
@@ -28,17 +24,14 @@ function generateHeading() {
 function generateLogoHeadline() {
     const headlineText = "Bite into Happiness!";
 
-    // LogoHeadline
     const logoHeadline = document.createElement('div');
     logoHeadline.classList.add('logoHeadline');
 
-        // Logo
     const logoImg = document.createElement("img");
     logoImg.classList.add('logo');
     logoImg.src = logo;
     logoHeadline.appendChild(logoImg)
 
-        // Headline
     const headline = document.createElement("h2");
     headline.innerText = headlineText;
     logoHeadline.appendChild(headline);
