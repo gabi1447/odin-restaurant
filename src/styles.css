@@ -5,9 +5,35 @@
 }
 
 body {
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 10% auto;
     padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav button {
+button {
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    justify-self: center;
+    align-self: center;
+}
+
+header .btns .nav-btn {
+    border: none;
     cursor: pointer;
+    padding: 0.25rem;
+    border-right: 0.1rem solid black;
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
