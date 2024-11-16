@@ -1,4 +1,4 @@
-import logo from './burger-logo.jpg';
+import logo from './minimalistic-burger.png';
 
 export function generateHomepage() {
     const content = document.getElementById('content');
@@ -9,8 +9,6 @@ export function generateHomepage() {
 
     const logoHeadline = generateLogoHeadline();
     content.appendChild(logoHeadline);
-
-    
 }
 
 function generateHeading() {
