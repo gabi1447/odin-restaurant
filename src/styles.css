@@ -37,3 +37,32 @@ button:hover {
     background-color: black;
     color: white;
 }
+
+/* Content */
+.home-content, .menu-content, .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Home content */
+.home-content .restaurantHeading {
+    font-size: 6vw;
+}
+
+.home-content .logoHeadline {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home-content .logoHeadline .headline {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.home-content .restaurantDescription {
+    width: 65ch;
+    text-align: center;
+}
