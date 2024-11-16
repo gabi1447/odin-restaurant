@@ -10,8 +10,7 @@ export function generateHomepage() {
     const logoHeadline = generateLogoHeadline();
     content.appendChild(logoHeadline);
 
-    const restaurantDescription = generateDescription();
-    content.appendChild(restaurantDescription);
+    
 }
 
 function generateHeading() {
@@ -34,10 +33,18 @@ function generateLogoHeadline() {
     logoImg.src = logo;
     logoHeadline.appendChild(logoImg)
 
+    const headlineDescription = document.createElement('div');
+
     const headline = document.createElement("h2");
     headline.classList.add('headline');
     headline.innerText = headlineText;
-    logoHeadline.appendChild(headline);
+    headlineDescription.appendChild(headline);
+
+    const restaurantDescription = generateDescription();
+    headlineDescription.appendChild(restaurantDescription);
+
+    console.log(headlineDescription);
+    logoHeadline.appendChild(headlineDescription);
 
     return logoHeadline;
 }
