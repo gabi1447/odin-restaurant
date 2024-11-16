@@ -34,6 +34,7 @@ function generateLogoHeadline() {
     logoHeadline.appendChild(logoImg)
 
     const headlineDescription = document.createElement('div');
+    headlineDescription.className = 'headlineDescription';
 
     const headline = document.createElement("h2");
     headline.classList.add('headline');
